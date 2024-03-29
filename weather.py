@@ -13,14 +13,14 @@ openmeteo = openmeteo_requests.Client(session = retry_session)
 
 url = "https://api.open-meteo.com/v1/forecast"
 
-# Geopy API, given a city name, produce coordinates
+# Geopy API: given a city name, produces coordinates
 geolocator = geopy.geocoders.Nominatim(user_agent="weather_project")
 
 def city_name(var):
     """Enter a city name or address"""
     location = geolocator.geocode(var)
     if location is None:
-        print("the address or city cannot be found. Did you spell city name correctly?")
+        print("the address or the city cannot be found. Did you spell it correctly?")
         raise SystemExit(0)
 
     params = {
