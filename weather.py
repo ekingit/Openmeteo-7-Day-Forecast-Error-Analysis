@@ -32,9 +32,6 @@ def city_name(var):
     daily = response.Daily()
     daily_temperature_2m_max = daily.Variables(0).ValuesAsNumpy()
     daily_temperature_2m_min = daily.Variables(1).ValuesAsNumpy()
-    daily = response.Daily()
-    daily_temperature_2m_max = daily.Variables(0).ValuesAsNumpy()
-    daily_temperature_2m_min = daily.Variables(1).ValuesAsNumpy()
     daily_data = {"date": pd.date_range(
 		start = pd.to_datetime(daily.Time(), unit = "s", utc = True),
 		end = pd.to_datetime(daily.TimeEnd(), unit = "s", utc = True),
