@@ -1,6 +1,7 @@
-openmeteo-requests
-requests-cache
-retry-requests
 numpy
 pandas
-geopy
+openmeteo_requests
+requests_cache
+retry_requests
+psycopg2
+sqlalchemy
