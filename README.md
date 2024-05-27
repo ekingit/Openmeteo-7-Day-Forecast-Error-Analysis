@@ -13,31 +13,35 @@ Statistical methods were employed to evaluate the accuracy of the OpenMeteo fore
 The results of the accuracy analysis are showcased through an interactive Tableau dashboard. This dashboard provides visualizations and summaries of the performance of the OpenMeteo API across different capital cities and weather parameters. Viewers can gain insights into the reliability of the forecasts through intuitive visualizations and informative summaries.
 
 ## Results
-The accuracy assessment reveals that the OpenMeteo API achieves 99.7% accuracy within a range of 
-* +/-0.951 for 1-day,
-* +/-1.505 for 2-day,
-* +/-2.102 for 3-day,
-* +/-2.409 for 4-day,
-* +/-2.789 for 5-day,
-* and +/-3.690 for 6-day
+# OpenMeteo API Accuracy Assessment
+
+The accuracy assessment reveals that the OpenMeteo API achieves the following accuracy within specified ranges:
+
+- +/-0.951 for 1-day forecasts
+- +/-1.505 for 2-day forecasts
+- +/-2.102 for 3-day forecasts
+- +/-2.409 for 4-day forecasts
+- +/-2.789 for 5-day forecasts
+- +/-3.690 for 6-day forecasts
+
 
 Detailed analysis of results are showcased in a [tableau dashborad](https://public.tableau.com/views/OpenMeteo7-DayForecastDashboardErrorAnalysis/OpenMeteo7-DayForecastDashboardErrorAnalysis?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
 
 ## Installation and Usage
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 # Requirements
- - Data handling
-numpy
-pandas
- - Data collection
-openmeteo_requests
-requests_cache
-retry_requests
- - Postgre SQL connection
-psycopg2
-sqlalchemy
+ - Data handling:
+numpy,
+pandas.
+ - Data collection:
+openmeteo_requests,
+requests_cache,
+retry_requests.
+ - Postgre SQL connection:
+psycopg2,
+sqlalchemy.
 # Usage
 1 - **Download Data:** Obtain .csv file of [worldcities](https://simplemaps.com/data/world-cities). It consists of city, country names, coordinates, administrative status.
 
